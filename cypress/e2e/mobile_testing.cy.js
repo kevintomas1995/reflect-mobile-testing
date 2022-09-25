@@ -19,7 +19,7 @@ Cypress.Commands.add("checkDesktop", () => {
 const mobileSizes = ["iphone-6", "samsung-note9", "iphone-xr", [300, 800]];
 const desktopSizes = ["macbook-15", "macbook-13", "macbook-11", [1024, 768]];
 
-context("Viewport", () => {
+context("Mobile Testing", () => {
   beforeEach(() => {
     cy.visit("http://localhost:3000/");
   });
