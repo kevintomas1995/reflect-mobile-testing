@@ -76,14 +76,4 @@ context("Mobile Testing", () => {
     cy.viewport("iphone-xr", "landscape");
     cy.checkDesktop();
   });
-
-  it("simulating touch device", () => {
-    cy.visit("http://localhost:3000/", {
-      onBeforeLoad: (win) => {
-        win.ontouchstart = true;
-      },
-    });
-
-    cy.get("#touchDevice").contains("Touch device");
-  });
 });
